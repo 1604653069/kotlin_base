@@ -9,7 +9,13 @@
         android:id="@+id/banner"
         app:open_mz_mode="true"
         app:middle_page_cover="true"
-        app:indicatorAlign="right"
+        app:canLoop="true"
+        app:indicatorAlign="center"
         android:layout_width="match_parent"
         android:layout_height="180dp"/>
+    <TextView
+        android:text="hello"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

@@ -4,6 +4,6 @@ import android.content.Context
 import com.xlkj.wanandroid.base.BasePresenter
 
 class MainPresenter(context: Context, view: MainView) :
-    BasePresenter<MainView, MainModel>(context, view) {
-    override fun getModel(): MainModel = MainModel()
+     BasePresenter<MainView, MainModel>(context, view) {
+    override fun getModel(): MainModel = MainModel(mContext)
 }

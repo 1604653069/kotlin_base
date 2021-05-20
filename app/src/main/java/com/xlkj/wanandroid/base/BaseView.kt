@@ -10,4 +10,5 @@ interface BaseView {
      * 关闭对话框
      */
     fun dissDialog()
+
 }

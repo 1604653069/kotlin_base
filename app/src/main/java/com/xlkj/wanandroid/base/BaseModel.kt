@@ -1,4 +1,7 @@
 package com.xlkj.wanandroid.base
 
-open class BaseModel {
+import android.content.Context
+
+open class BaseModel(context: Context) {
+    val ctx = context
 }
