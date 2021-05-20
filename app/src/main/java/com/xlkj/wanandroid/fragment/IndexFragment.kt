@@ -18,7 +18,7 @@ import com.zhouwei.mzbanner.holder.MZViewHolder
 import kotlinx.android.synthetic.main.fragment_index.*
 
 class IndexFragment: BaseFragment<IndexPresenter>(), IndexView {
-    var urls:ArrayList<String> = ArrayList()
+
     override fun createPresenter(): IndexPresenter = IndexPresenter(ctx,this)
 
     override fun logical() {
@@ -38,9 +38,6 @@ class IndexFragment: BaseFragment<IndexPresenter>(), IndexView {
     }
 
     override fun dataBackLisenter(t: List<BannerModel>) {
-        for (url in t){
-            urls.add(url.imagePath)
-        }
         banner.setPages(t as List<Nothing>?){
               BannerViewHolder()
         }
