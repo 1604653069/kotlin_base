@@ -1,6 +1,6 @@
 package com.xlkj.wanandroid.model
 
-class BannerModel(
+data class BannerModel(
     val desc:String,
     val id:Int,
     val imagePath:String,
@@ -9,8 +9,4 @@ class BannerModel(
     val title:String,
     val type:Int,
     val url:String
-){
-    override fun toString(): String {
-        return "BannerModel(desc='$desc', id=$id, imagePath='$imagePath', isVisible=$isVisible, order=$order, title='$title', type=$type, url='$url')"
-    }
-}
+)
